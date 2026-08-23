@@ -1,33 +1,604 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Splashes swimming coaching and tournament website"><link rel="icon" href="images/favicon.png"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet" href="css/styles.css"><title>Splashes | Gallery</title></head><body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/splashes-logo.png" alt="Splashes Swimming logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="coaching.html">Coaching</a></li>
-        <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
-        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="coupons.html">Coupons</a></li>
-        <li class="nav-item"><a class="nav-link" href="social.html">Social</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item ml-lg-2"><a class="btn btn-aqua btn-sm px-3" href="register.html">Join Now</a></li>
-      </ul>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Splashes swimming coaching and tournament website">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+
+    <title>Splashes | Gallery</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Responsive Bootstrap Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <img src="images/splashes-logo.png"
+                     alt="Splashes Swimming logo">
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="mainNav">
+
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="coaching.html">
+                            Coaching
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="tournaments.html">
+                            Tournaments
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="activities.html">
+                            Activities
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="coupons.html">
+                            Coupons
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="social.html">
+                            Social
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-lg-2">
+
+                        <a class="btn btn-aqua btn-sm px-3"
+                           href="register.html">
+
+                            Join Now
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Gallery Page Hero -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                MOMENTS IN EVERY SPLASH
+            </span>
+
+            <h1>
+                Gallery
+            </h1>
+
+            <p>
+                Click any image to open the responsive
+                Bootstrap lightbox.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Responsive Swimming Gallery -->
+
+    <section class="container py-5">
+
+        <div class="gallery-grid">
+
+
+            <!-- Gallery Image 1 -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/gallery-1.jpg"
+                    aria-label="Open swimming gallery photo 1">
+
+                <img src="images/gallery-1.jpg"
+                     alt="Splashes swimmer training in the pool">
+
+            </button>
+
+
+
+            <!-- Gallery Image 2 -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/gallery-2.jpg"
+                    aria-label="Open swimming gallery photo 2">
+
+                <img src="images/gallery-2.jpg"
+                     alt="Splashes swimming activity">
+
+            </button>
+
+
+
+            <!-- Gallery Image 3 -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/gallery-3.jpg"
+                    aria-label="Open swimming gallery photo 3">
+
+                <img src="images/gallery-3.jpg"
+                     alt="Swimmer participating in a Splashes program">
+
+            </button>
+
+
+
+            <!-- Gallery Image 4 -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/gallery-4.jpg"
+                    aria-label="Open swimming gallery photo 4">
+
+                <img src="images/gallery-4.jpg"
+                     alt="Splashes swimmer practicing technique">
+
+            </button>
+
+
+
+            <!-- Gallery Image 5 -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/gallery-5.jpg"
+                    aria-label="Open swimming gallery photo 5">
+
+                <img src="images/gallery-5.jpg"
+                     alt="Swimming practice at Splashes">
+
+            </button>
+
+
+
+            <!-- Underwater Swimmer -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/underwater-swimmer.jpg"
+                    aria-label="Open underwater swimmer photo">
+
+                <img src="images/underwater-swimmer.jpg"
+                     alt="Swimmer moving underwater">
+
+            </button>
+
+
+
+            <!-- Starting Blocks -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/starting-blocks.jpg"
+                    aria-label="Open starting blocks photo">
+
+                <img src="images/starting-blocks.jpg"
+                     alt="Competitive swimmers preparing on starting blocks">
+
+            </button>
+
+
+
+            <!-- Swim Class -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/swim-class.jpg"
+                    aria-label="Open swim class photo">
+
+                <img src="images/swim-class.jpg"
+                     alt="Students participating in a swimming class">
+
+            </button>
+
+
+
+            <!-- Butterfly Swimmer -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/butterfly-swimmer.jpg"
+                    aria-label="Open butterfly swimmer photo">
+
+                <img src="images/butterfly-swimmer.jpg"
+                     alt="Competitive swimmer performing butterfly stroke">
+
+            </button>
+
+
+
+            <!-- Team Smiles -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/team-smiles.jpg"
+                    aria-label="Open Splashes team photo">
+
+                <img src="images/team-smiles.jpg"
+                     alt="Splashes swim team smiling together">
+
+            </button>
+
+
+
+            <!-- Champion Swimmer -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/champion-swimmer.jpg"
+                    aria-label="Open champion swimmer photo">
+
+                <img src="images/champion-swimmer.jpg"
+                     alt="Splashes competitive swimmer celebrating">
+
+            </button>
+
+
+
+            <!-- Team Activity -->
+
+            <button class="gallery-item"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#galleryModal"
+                    data-img="images/activity-team.jpg"
+                    aria-label="Open team activity photo">
+
+                <img src="images/activity-team.jpg"
+                     alt="Splashes swimmers participating in a team activity">
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Bootstrap Gallery Modal -->
+
+    <div class="modal fade"
+         id="galleryModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="galleryModalLabel"
+         aria-hidden="true">
+
+
+        <div class="modal-dialog modal-xl modal-dialog-centered"
+             role="document">
+
+
+            <div class="modal-content bg-transparent border-0">
+
+
+                <!-- Modal Close Button -->
+
+                <button type="button"
+                        class="close text-white text-right pr-2"
+                        data-dismiss="modal"
+                        aria-label="Close gallery image">
+
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+
+                </button>
+
+
+
+                <!-- Expanded Gallery Image -->
+
+                <img id="modalGalleryImage"
+                     class="img-fluid rounded-lg"
+                     src="images/gallery-1.jpg"
+                     alt="Expanded Splashes swimming gallery view">
+
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
-</nav><section class="page-hero"><div class="container"><span class="eyebrow">MOMENTS IN EVERY SPLASH</span><h1>Gallery</h1><p>Click any image to open the responsive Bootstrap lightbox.</p></div></section><section class="container py-5"><div class="gallery-grid"><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/gallery-1.jpg" aria-label="Open swimming photo"><img src="images/gallery-1.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/gallery-2.jpg" aria-label="Open swimming photo"><img src="images/gallery-2.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/gallery-3.jpg" aria-label="Open swimming photo"><img src="images/gallery-3.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/gallery-4.jpg" aria-label="Open swimming photo"><img src="images/gallery-4.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/gallery-5.jpg" aria-label="Open swimming photo"><img src="images/gallery-5.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/underwater-swimmer.jpg" aria-label="Open swimming photo"><img src="images/underwater-swimmer.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/starting-blocks.jpg" aria-label="Open swimming photo"><img src="images/starting-blocks.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/swim-class.jpg" aria-label="Open swimming photo"><img src="images/swim-class.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/butterfly-swimmer.jpg" aria-label="Open swimming photo"><img src="images/butterfly-swimmer.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/team-smiles.jpg" aria-label="Open swimming photo"><img src="images/team-smiles.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/champion-swimmer.jpg" aria-label="Open swimming photo"><img src="images/champion-swimmer.jpg" alt="Splashes swimming gallery photo"></button><button class="gallery-item" data-toggle="modal" data-target="#galleryModal" data-img="images/activity-team.jpg" aria-label="Open swimming photo"><img src="images/activity-team.jpg" alt="Splashes swimming gallery photo"></button></div></section><div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content bg-transparent border-0"><button type="button" class="close text-white text-right pr-2" data-dismiss="modal">&times;</button><img id="modalGalleryImage" class="img-fluid rounded-lg" alt="Expanded gallery view"></div></div></div>
-<footer class="site-footer mt-5">
-  <div class="wave-top"></div>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-4 mb-4"><img class="footer-logo" src="images/splashes-logo.png" alt="Splashes"><p class="mt-2">Where every stroke counts. Coaching, competition and community for swimmers at every level.</p></div>
-      <div class="col-6 col-md-2"><h6>Explore</h6><a href="coaching.html">Coaching</a><a href="tournaments.html">Tournaments</a><a href="activities.html">Activities</a><a href="gallery.html">Gallery</a></div>
-      <div class="col-6 col-md-2"><h6>Support</h6><a href="coupons.html">Coupons</a><a href="register.html">Registration</a><a href="contact.html">Contact</a><a href="social.html">Social Media</a></div>
-      <div class="col-md-4 mt-4 mt-md-0"><h6>Contact</h6><p class="mb-1">(123) 456 7890</p><p class="mb-1">info@splashes.com</p><p>123 Aqua Lane, Pool City, CA 90210</p><div class="social-dots"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div></div>
-    </div>
-    <hr><p class="small mb-0 text-center">© 2026 Splashes Swimming. Student Project.</p>
-  </div>
-</footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="js/script.js"></script></body></html>
+
+
+
+    <!-- Site Footer -->
+
+    <footer class="site-footer mt-5">
+
+        <div class="wave-top"></div>
+
+
+        <div class="container py-5">
+
+            <div class="row">
+
+
+                <div class="col-md-4 mb-4">
+
+                    <img class="footer-logo"
+                         src="images/splashes-logo.png"
+                         alt="Splashes">
+
+                    <p class="mt-2">
+                        Where every stroke counts.
+                        Coaching, competition and community
+                        for swimmers at every level.
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Explore
+                    </h6>
+
+                    <a href="coaching.html">
+                        Coaching
+                    </a>
+
+                    <a href="tournaments.html">
+                        Tournaments
+                    </a>
+
+                    <a href="activities.html">
+                        Activities
+                    </a>
+
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Support
+                    </h6>
+
+                    <a href="coupons.html">
+                        Coupons
+                    </a>
+
+                    <a href="register.html">
+                        Registration
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="social.html">
+                        Social Media
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-md-4 mt-4 mt-md-0">
+
+                    <h6>
+                        Contact
+                    </h6>
+
+                    <p class="mb-1">
+                        (123) 456 7890
+                    </p>
+
+                    <p class="mb-1">
+                        info@splashes.com
+                    </p>
+
+                    <p>
+                        123 Aqua Lane, Pool City, CA 90210
+                    </p>
+
+
+                    <div class="social-dots">
+
+                        <a href="#"
+                           aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#"
+                           aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#"
+                           aria-label="YouTube">
+                            ▶
+                        </a>
+
+                        <a href="#"
+                           aria-label="TikTok">
+                            ♪
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="small mb-0 text-center">
+                © 2026 Splashes Swimming. Student Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript Libraries and Custom Script -->
+
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+
+    <!-- Popper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+
+    <!-- Custom JavaScript -->
+
+    <script src="js/script.js">
+    </script>
+
+
+</body>
+
+</html>

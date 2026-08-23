@@ -1,36 +1,643 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Splashes swimming coaching and tournament website"><link rel="icon" href="images/favicon.png"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet" href="css/styles.css"><title>Splashes | Tournaments</title></head><body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/splashes-logo.png" alt="Splashes Swimming logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="coaching.html">Coaching</a></li>
-        <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
-        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="coupons.html">Coupons</a></li>
-        <li class="nav-item"><a class="nav-link" href="social.html">Social</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item ml-lg-2"><a class="btn btn-aqua btn-sm px-3" href="register.html">Join Now</a></li>
-      </ul>
-    </div>
-  </div>
-</nav><section class="page-hero"><div class="container"><span class="eyebrow">COMPETE • CHALLENGE • CELEBRATE</span><h1>Tournaments</h1><p>Race opportunities for developing swimmers and experienced competitors.</p></div></section><section class="container py-5"><div class="form-row mb-4"><div class="col-md-5"><input id="eventSearch" class="form-control" placeholder="Search tournaments"></div><div class="col-md-4"><select id="eventLevel" class="form-control"><option value="all">All levels</option><option value="beginner">Beginner</option><option value="competitive">Competitive</option><option value="elite">Elite</option></select></div></div><div class="row" id="eventGrid">
-<div class="col-md-4 mb-4 event-card-wrap" data-level="beginner"><div class="event-card"><img src="images/summer-meet.jpg" alt="Summer meet"><div class="p-4"><span class="pill">Beginner</span><h3>Summer Splash Meet</h3><p><strong>June 13, 2026</strong><br>Blue Wave Aquatic Center</p><p>A friendly kickoff meet with medals, relays and family activities.</p><a href="register.html" class="btn btn-aqua btn-block">Register</a></div></div></div>
-<div class="col-md-4 mb-4 event-card-wrap" data-level="competitive"><div class="event-card"><img src="images/city-championship.jpg" alt="City championship"><div class="p-4"><span class="pill">Competitive</span><h3>City Championship</h3><p><strong>August 8, 2026</strong><br>Riverside Pool</p><p>Qualifying races across every stroke with team points and finals.</p><a href="register.html" class="btn btn-aqua btn-block">Register</a></div></div></div>
-<div class="col-md-4 mb-4 event-card-wrap" data-level="elite"><div class="event-card"><img src="images/winter-invitational.jpg" alt="Winter invitational"><div class="p-4"><span class="pill">Elite</span><h3>Winter Invitational</h3><p><strong>December 5, 2026</strong><br>Olympic Swim Complex</p><p>Our premier end of year meet for advanced competitive swimmers.</p><a href="register.html" class="btn btn-aqua btn-block">Register</a></div></div></div></div></section>
-<footer class="site-footer mt-5">
-  <div class="wave-top"></div>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-4 mb-4"><img class="footer-logo" src="images/splashes-logo.png" alt="Splashes"><p class="mt-2">Where every stroke counts. Coaching, competition and community for swimmers at every level.</p></div>
-      <div class="col-6 col-md-2"><h6>Explore</h6><a href="coaching.html">Coaching</a><a href="tournaments.html">Tournaments</a><a href="activities.html">Activities</a><a href="gallery.html">Gallery</a></div>
-      <div class="col-6 col-md-2"><h6>Support</h6><a href="coupons.html">Coupons</a><a href="register.html">Registration</a><a href="contact.html">Contact</a><a href="social.html">Social Media</a></div>
-      <div class="col-md-4 mt-4 mt-md-0"><h6>Contact</h6><p class="mb-1">(123) 456 7890</p><p class="mb-1">info@splashes.com</p><p>123 Aqua Lane, Pool City, CA 90210</p><div class="social-dots"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div></div>
-    </div>
-    <hr><p class="small mb-0 text-center">© 2026 Splashes Swimming. Student Project.</p>
-  </div>
-</footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Splashes swimming coaching and tournament website">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+
+    <title>Splashes | Tournaments</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Responsive Bootstrap Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <img src="images/splashes-logo.png"
+                     alt="Splashes Swimming logo">
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="mainNav">
+
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="coaching.html">
+                            Coaching
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="tournaments.html">
+                            Tournaments
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="activities.html">
+                            Activities
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="coupons.html">
+                            Coupons
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="social.html">
+                            Social
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-lg-2">
+
+                        <a class="btn btn-aqua btn-sm px-3"
+                           href="register.html">
+
+                            Join Now
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Tournament Page Hero -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                COMPETE • CHALLENGE • CELEBRATE
+            </span>
+
+            <h1>
+                Tournaments
+            </h1>
+
+            <p>
+                Race opportunities for developing swimmers
+                and experienced competitors.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Tournament Search and Filter -->
+
+    <section class="container py-5">
+
+
+        <div class="section-heading text-center">
+
+            <span class="eyebrow">
+                FIND YOUR NEXT RACE
+            </span>
+
+            <h2>
+                2026 Tournament Schedule
+            </h2>
+
+            <p>
+                Search by tournament name or filter
+                events by swimmer level.
+            </p>
+
+        </div>
+
+
+        <div class="form-row mb-4">
+
+
+            <!-- Tournament Search -->
+
+            <div class="col-md-5 mb-3 mb-md-0">
+
+                <label class="sr-only"
+                       for="eventSearch">
+
+                    Search tournaments
+
+                </label>
+
+                <input id="eventSearch"
+                       type="text"
+                       class="form-control"
+                       placeholder="Search tournaments">
+
+            </div>
+
+
+
+            <!-- Tournament Level Filter -->
+
+            <div class="col-md-4">
+
+                <label class="sr-only"
+                       for="eventLevel">
+
+                    Filter tournament level
+
+                </label>
+
+                <select id="eventLevel"
+                        class="form-control">
+
+                    <option value="all">
+                        All levels
+                    </option>
+
+                    <option value="beginner">
+                        Beginner
+                    </option>
+
+                    <option value="competitive">
+                        Competitive
+                    </option>
+
+                    <option value="elite">
+                        Elite
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Tournament Cards -->
+
+        <div class="row"
+             id="eventGrid">
+
+
+            <!-- Summer Splash Meet -->
+
+            <div class="col-md-4 mb-4 event-card-wrap"
+                 data-level="beginner">
+
+                <div class="event-card">
+
+                    <img src="images/summer-meet.jpg"
+                         alt="Swimmers participating in the Summer Splash Meet">
+
+                    <div class="p-4">
+
+                        <span class="pill">
+                            Beginner
+                        </span>
+
+                        <h3>
+                            Summer Splash Meet
+                        </h3>
+
+                        <p>
+
+                            <strong>
+                                June 13, 2026
+                            </strong>
+
+                            <br>
+
+                            Blue Wave Aquatic Center
+
+                        </p>
+
+                        <p>
+                            A friendly kickoff meet with medals,
+                            relays and family activities.
+                        </p>
+
+                        <a href="register.html"
+                           class="btn btn-aqua btn-block">
+
+                            Register
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- City Championship -->
+
+            <div class="col-md-4 mb-4 event-card-wrap"
+                 data-level="competitive">
+
+                <div class="event-card">
+
+                    <img src="images/city-championship.jpg"
+                         alt="Competitive swimmers at the City Championship">
+
+                    <div class="p-4">
+
+                        <span class="pill">
+                            Competitive
+                        </span>
+
+                        <h3>
+                            City Championship
+                        </h3>
+
+                        <p>
+
+                            <strong>
+                                August 8, 2026
+                            </strong>
+
+                            <br>
+
+                            Riverside Pool
+
+                        </p>
+
+                        <p>
+                            Qualifying races across every stroke
+                            with team points and finals.
+                        </p>
+
+                        <a href="register.html"
+                           class="btn btn-aqua btn-block">
+
+                            Register
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Winter Invitational -->
+
+            <div class="col-md-4 mb-4 event-card-wrap"
+                 data-level="elite">
+
+                <div class="event-card">
+
+                    <img src="images/winter-invitational.jpg"
+                         alt="Advanced swimmers at the Winter Invitational">
+
+                    <div class="p-4">
+
+                        <span class="pill">
+                            Elite
+                        </span>
+
+                        <h3>
+                            Winter Invitational
+                        </h3>
+
+                        <p>
+
+                            <strong>
+                                December 5, 2026
+                            </strong>
+
+                            <br>
+
+                            Olympic Swim Complex
+
+                        </p>
+
+                        <p>
+                            Our premier end of year meet
+                            for advanced competitive swimmers.
+                        </p>
+
+                        <a href="register.html"
+                           class="btn btn-aqua btn-block">
+
+                            Register
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- jQuery AJAX Tournament Component -->
+
+    <section class="container pb-5">
+
+        <div class="section-heading text-center">
+
+            <span class="eyebrow">
+                DYNAMIC EVENT FEED
+            </span>
+
+            <h2>
+                Upcoming Meets
+            </h2>
+
+            <p>
+                The tournament information below is loaded
+                dynamically from a local JSON file using jQuery AJAX.
+            </p>
+
+        </div>
+
+
+        <div class="row"
+             id="ajaxEvents">
+
+            <div class="col-12 text-center">
+
+                <p>
+                    Loading tournament information...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Site Footer -->
+
+    <footer class="site-footer mt-5">
+
+        <div class="wave-top"></div>
+
+
+        <div class="container py-5">
+
+            <div class="row">
+
+
+                <div class="col-md-4 mb-4">
+
+                    <img class="footer-logo"
+                         src="images/splashes-logo.png"
+                         alt="Splashes">
+
+                    <p class="mt-2">
+                        Where every stroke counts.
+                        Coaching, competition and community
+                        for swimmers at every level.
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Explore
+                    </h6>
+
+                    <a href="coaching.html">
+                        Coaching
+                    </a>
+
+                    <a href="tournaments.html">
+                        Tournaments
+                    </a>
+
+                    <a href="activities.html">
+                        Activities
+                    </a>
+
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Support
+                    </h6>
+
+                    <a href="coupons.html">
+                        Coupons
+                    </a>
+
+                    <a href="register.html">
+                        Registration
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="social.html">
+                        Social Media
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-md-4 mt-4 mt-md-0">
+
+                    <h6>
+                        Contact
+                    </h6>
+
+                    <p class="mb-1">
+                        (123) 456 7890
+                    </p>
+
+                    <p class="mb-1">
+                        info@splashes.com
+                    </p>
+
+                    <p>
+                        123 Aqua Lane, Pool City, CA 90210
+                    </p>
+
+
+                    <div class="social-dots">
+
+                        <a href="#"
+                           aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#"
+                           aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#"
+                           aria-label="YouTube">
+                            ▶
+                        </a>
+
+                        <a href="#"
+                           aria-label="TikTok">
+                            ♪
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="small mb-0 text-center">
+                © 2026 Splashes Swimming. Student Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript Libraries and Custom Script -->
+
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+
+    <!-- Popper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+
+    <!-- Custom JavaScript -->
+
+    <script src="js/script.js">
+    </script>
+
+
+</body>
+
+</html>

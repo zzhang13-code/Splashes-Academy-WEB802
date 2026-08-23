@@ -1,33 +1,663 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Splashes swimming coaching and tournament website"><link rel="icon" href="images/favicon.png"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet" href="css/styles.css"><title>Splashes | Contact</title></head><body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/splashes-logo.png" alt="Splashes Swimming logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="coaching.html">Coaching</a></li>
-        <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
-        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="coupons.html">Coupons</a></li>
-        <li class="nav-item"><a class="nav-link" href="social.html">Social</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item ml-lg-2"><a class="btn btn-aqua btn-sm px-3" href="register.html">Join Now</a></li>
-      </ul>
-    </div>
-  </div>
-</nav><section class="page-hero"><div class="container"><span class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</span><h1>Contact Us</h1><p>Questions about classes, events or enrollment? Send us a message.</p></div></section><section class="container py-5"><div class="row"><div class="col-lg-5 mb-4"><div class="contact-panel"><h3>Visit Splashes</h3><p><strong>Address</strong><br>123 Aqua Lane<br>Pool City, CA 90210</p><p><strong>Phone</strong><br>(123) 456 7890</p><p><strong>Email</strong><br>info@splashes.com</p><p><strong>Hours</strong><br>Mon to Fri: 8:00 AM to 8:00 PM<br>Sat to Sun: 10:00 AM to 5:00 PM</p><div class="fake-map">AQUA LANE<br><span>Splashes Swim Center</span></div></div></div><div class="col-lg-7"><form id="contactForm" class="form-card" novalidate><div class="form-row"><div class="form-group col-md-6"><label for="contactName">Name</label><input id="contactName" class="form-control" required><div class="invalid-feedback">Please enter your name.</div></div><div class="form-group col-md-6"><label for="contactEmail">Email</label><input id="contactEmail" type="email" class="form-control" required><div class="invalid-feedback">Please enter a valid email.</div></div></div><div class="form-group"><label for="subject">Subject</label><select id="subject" class="form-control"><option>Coaching</option><option>Tournament</option><option>Activities</option><option>Registration</option><option>Other</option></select></div><div class="form-group"><label for="message">Message</label><textarea id="message" class="form-control" rows="7" required></textarea><div class="invalid-feedback">Please enter a message.</div></div><button class="btn btn-aqua btn-lg" type="submit">Send Message</button><div id="contactSuccess" class="alert alert-success mt-3 d-none">Message received. This student demo does not send data to a server.</div></form></div></div></section>
-<footer class="site-footer mt-5">
-  <div class="wave-top"></div>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-4 mb-4"><img class="footer-logo" src="images/splashes-logo.png" alt="Splashes"><p class="mt-2">Where every stroke counts. Coaching, competition and community for swimmers at every level.</p></div>
-      <div class="col-6 col-md-2"><h6>Explore</h6><a href="coaching.html">Coaching</a><a href="tournaments.html">Tournaments</a><a href="activities.html">Activities</a><a href="gallery.html">Gallery</a></div>
-      <div class="col-6 col-md-2"><h6>Support</h6><a href="coupons.html">Coupons</a><a href="register.html">Registration</a><a href="contact.html">Contact</a><a href="social.html">Social Media</a></div>
-      <div class="col-md-4 mt-4 mt-md-0"><h6>Contact</h6><p class="mb-1">(123) 456 7890</p><p class="mb-1">info@splashes.com</p><p>123 Aqua Lane, Pool City, CA 90210</p><div class="social-dots"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div></div>
-    </div>
-    <hr><p class="small mb-0 text-center">© 2026 Splashes Swimming. Student Project.</p>
-  </div>
-</footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Splashes swimming coaching and tournament website">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+
+    <title>Splashes | Contact</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Responsive Bootstrap Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <img src="images/splashes-logo.png"
+                     alt="Splashes Swimming logo">
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="mainNav">
+
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="coaching.html">
+
+                            Coaching
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="tournaments.html">
+
+                            Tournaments
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="activities.html">
+
+                            Activities
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="gallery.html">
+
+                            Gallery
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="coupons.html">
+
+                            Coupons
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="social.html">
+
+                            Social
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ml-lg-2">
+
+                        <a class="btn btn-aqua btn-sm px-3"
+                           href="register.html">
+
+                            Join Now
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Contact Page Hero -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                WE WOULD LOVE TO HEAR FROM YOU
+            </span>
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                Questions about classes, events or enrollment?
+                Send us a message.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact Information and Contact Form -->
+
+    <section class="container py-5">
+
+        <div class="row">
+
+
+            <!-- Contact Information -->
+
+            <div class="col-lg-5 mb-4">
+
+                <div class="contact-panel">
+
+                    <h3>
+                        Visit Splashes
+                    </h3>
+
+
+                    <p>
+
+                        <strong>
+                            Address
+                        </strong>
+
+                        <br>
+
+                        123 Aqua Lane
+
+                        <br>
+
+                        Pool City, CA 90210
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        <br>
+
+                        (123) 456 7890
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <br>
+
+                        info@splashes.com
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Hours
+                        </strong>
+
+                        <br>
+
+                        Mon to Fri: 8:00 AM to 8:00 PM
+
+                        <br>
+
+                        Sat to Sun: 10:00 AM to 5:00 PM
+
+                    </p>
+
+
+                    <!-- Student Project Map Display -->
+
+                    <div class="fake-map">
+
+                        AQUA LANE
+
+                        <br>
+
+                        <span>
+                            Splashes Swim Center
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HTML Contact Form -->
+
+            <div class="col-lg-7">
+
+                <form id="contactForm"
+                      class="form-card"
+                      novalidate>
+
+
+                    <div class="form-row">
+
+
+                        <!-- Name Field -->
+
+                        <div class="form-group col-md-6">
+
+                            <label for="contactName">
+                                Name
+                            </label>
+
+                            <input id="contactName"
+                                   type="text"
+                                   class="form-control"
+                                   required>
+
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Email Field -->
+
+                        <div class="form-group col-md-6">
+
+                            <label for="contactEmail">
+                                Email
+                            </label>
+
+                            <input id="contactEmail"
+                                   type="email"
+                                   class="form-control"
+                                   required>
+
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Subject Selection -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <select id="subject"
+                                class="form-control">
+
+                            <option>
+                                Coaching
+                            </option>
+
+                            <option>
+                                Tournament
+                            </option>
+
+                            <option>
+                                Activities
+                            </option>
+
+                            <option>
+                                Registration
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Message Field -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea id="message"
+                                  class="form-control"
+                                  rows="7"
+                                  required>
+                        </textarea>
+
+                        <div class="invalid-feedback">
+                            Please enter a message.
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Form Submit Button -->
+
+                    <button class="btn btn-aqua btn-lg"
+                            type="submit">
+
+                        Send Message
+
+                    </button>
+
+
+
+                    <!-- JavaScript Success Message -->
+
+                    <div id="contactSuccess"
+                         class="alert alert-success mt-3 d-none">
+
+                        Message received. This student demo
+                        does not send data to a server.
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Site Footer -->
+
+    <footer class="site-footer mt-5">
+
+
+        <div class="wave-top"></div>
+
+
+        <div class="container py-5">
+
+
+            <div class="row">
+
+
+                <div class="col-md-4 mb-4">
+
+                    <img class="footer-logo"
+                         src="images/splashes-logo.png"
+                         alt="Splashes">
+
+
+                    <p class="mt-2">
+                        Where every stroke counts.
+                        Coaching, competition and community
+                        for swimmers at every level.
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Explore
+                    </h6>
+
+
+                    <a href="coaching.html">
+                        Coaching
+                    </a>
+
+                    <a href="tournaments.html">
+                        Tournaments
+                    </a>
+
+                    <a href="activities.html">
+                        Activities
+                    </a>
+
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-2">
+
+                    <h6>
+                        Support
+                    </h6>
+
+
+                    <a href="coupons.html">
+                        Coupons
+                    </a>
+
+                    <a href="register.html">
+                        Registration
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="social.html">
+                        Social Media
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-md-4 mt-4 mt-md-0">
+
+                    <h6>
+                        Contact
+                    </h6>
+
+
+                    <p class="mb-1">
+                        (123) 456 7890
+                    </p>
+
+                    <p class="mb-1">
+                        info@splashes.com
+                    </p>
+
+                    <p>
+                        123 Aqua Lane, Pool City, CA 90210
+                    </p>
+
+
+                    <div class="social-dots">
+
+                        <a href="#"
+                           aria-label="Facebook">
+
+                            f
+
+                        </a>
+
+
+                        <a href="#"
+                           aria-label="Instagram">
+
+                            ◎
+
+                        </a>
+
+
+                        <a href="#"
+                           aria-label="YouTube">
+
+                            ▶
+
+                        </a>
+
+
+                        <a href="#"
+                           aria-label="TikTok">
+
+                            ♪
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="small mb-0 text-center">
+                © 2026 Splashes Swimming. Student Project.
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JavaScript Libraries and Custom Script -->
+
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+
+    <!-- Popper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+
+    <!-- Custom JavaScript -->
+
+    <script src="js/script.js">
+    </script>
+
+
+</body>
+
+</html>
