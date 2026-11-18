@@ -77,13 +77,13 @@ $(function(){
 
 
     // jQuery AJAX
-    // Loads tournament information from data/events.json
+    // Loads tournament information from data/event.json
 
     if($('#ajaxEvents').length){
 
         $.ajax({
 
-            url: 'data/events.json',
+            url: 'data/event.json',
 
             dataType: 'json',
 
